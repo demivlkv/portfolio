@@ -54,10 +54,12 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.50vw;
+    transition: color 1.5s ease-in-out 0s;
 }
 
 header nav ul li a:hover {
     color: var(--primary-color);
+
 }
 
 header span {
@@ -67,22 +69,19 @@ header span {
 
 /* about me section */
 
-.about-me {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .about-me h2 {
     color: #faf9f9;
-    font-size: 60px;
+    font-size: 36px;
     font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
     text-align: right;
     flex: 1 30%;
+    padding-right: 60px;
+}
+
+.about-me span {
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .about-me p {
@@ -97,7 +96,6 @@ header span {
 .aboutme {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -105,7 +103,7 @@ header span {
 }
 
 .about-text {
-    flex: 2 70%;
+    flex: 1 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
