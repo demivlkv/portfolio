@@ -101,8 +101,18 @@ header span {
     text-align: left;
 }
 
+.about-img {
+    flex: 1 12%;
+}
+
+.about-img img {
+    max-width: 150px;
+    float: left;
+    margin-left: 50px;
+}
+
 .about-text {
-    flex: 1 70%;
+    flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
