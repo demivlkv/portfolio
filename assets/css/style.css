@@ -69,6 +69,15 @@ header span {
 
 /* about me section */
 
+.aboutme {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .about-me h2 {
     color: #faf9f9;
     font-size: 36px;
@@ -93,19 +102,78 @@ header span {
     text-align: left;
 }
 
-.aboutme {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .about-text {
     flex: 1 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     border-left: 1px solid var(--primary-color);
+}
+
+/* showcase */
+
+.works {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase h2 {
+    color: #faf9f9;
+    font-size: 36px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    flex: 1 30%;
+    padding-right: 60px;
+}
+
+.showcase span {
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.showcase p {
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* contact me */
+
+.contact-info {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-me h2 {
+    color: #faf9f9;
+    font-size: 36px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    flex: 1 30%;
+    padding-right: 60px;
+}
+
+.contact-me span {
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-me p {
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    text-align: left;
 }
