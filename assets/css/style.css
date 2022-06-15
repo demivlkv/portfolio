@@ -59,7 +59,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--primary-color);
-
 }
 
 header span {
@@ -110,7 +109,7 @@ header span {
     border-left: 1px solid var(--primary-color);
 }
 
-/* showcase */
+/* showcase section */
 
 .works {
     margin: 50px auto;
@@ -144,7 +143,7 @@ header span {
     text-align: left;
 }
 
-/* contact me */
+/* contact me section */
 
 .contact-info {
     margin: 50px auto;
@@ -176,4 +175,14 @@ header span {
     width: 80%;
     font-size: 20px;
     text-align: left;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.5s ease-in-out 0s;
+}
+
+.contact-me a:hover {
+    color: var(--secondary-color);
 }
