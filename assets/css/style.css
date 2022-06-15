@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #00f5d4;
+    --secondary-color: #f6f7eb;
+    --tertiary-color: #39a6b2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +12,6 @@
 
 body {
     background-color: #333333;
-    color: #f6f7eb;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -21,16 +26,16 @@ header {
     z-index: 9999;
 }
 
-header h1 {
+header h1 a {
     font-weight: bold;
     font-size: 36px;
-    color: #e94f37;
+    color: var(--primary-color);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: #e94f37;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -48,11 +53,61 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.50vw;
 }
 
 header nav ul li a:hover {
-    background: #e94f37;
-    color: #393e41;
-    border-radius: 15px;
+    color: var(--primary-color);
+}
+
+header span {
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* about me section */
+
+.about-me {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me h2 {
+    color: #faf9f9;
+    font-size: 60px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: right;
+    flex: 1 30%;
+}
+
+.about-me p {
+    margin: 0 auto;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.aboutme {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-left: 1px solid var(--primary-color);
 }
