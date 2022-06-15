@@ -16,6 +16,7 @@ body {
 }
 
 header {
+    background-color: #333333;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
@@ -53,7 +54,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.50vw;
+    font-size: 18px;
     transition: color 1.5s ease-in-out 0s;
 }
 
@@ -61,14 +62,12 @@ header nav ul li a:hover {
     color: var(--primary-color);
 }
 
-header span {
+span {
     color: var(--primary-color);
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* about me section */
-
-.aboutme {
+.container {
     margin: 50px auto;
     padding-bottom: 50px;
     display: flex;
@@ -76,6 +75,8 @@ header span {
     align-items: center;
     justify-content: space-between;
 }
+
+/* about me section */
 
 .about-me h2 {
     color: #faf9f9;
@@ -87,17 +88,20 @@ header span {
     padding-right: 60px;
 }
 
-.about-me span {
-    color: var(--primary-color);
-    font-family: 'Courier New', Courier, monospace;
+.about-text {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-left: 1px solid var(--primary-color);
 }
 
 .about-me p {
-    margin: 0 auto;
+    margin: 0 60px 0 auto;
     line-height: 1.7;
     color: var(--secondary-color);
-    width: 80%;
-    font-size: 20px;
+    width: 70%;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -111,23 +115,7 @@ header span {
     margin-left: 50px;
 }
 
-.about-text {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border-left: 1px solid var(--primary-color);
-}
-
 /* showcase section */
-
-.works {
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .showcase h2 {
     color: #faf9f9;
@@ -139,29 +127,16 @@ header span {
     padding-right: 60px;
 }
 
-.showcase span {
-    color: var(--primary-color);
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .showcase p {
     margin: 0 auto;
     line-height: 1.7;
     color: var(--secondary-color);
-    width: 80%;
+    width: 70%;
     font-size: 20px;
     text-align: left;
 }
 
 /* contact me section */
-
-.contact-info {
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .contact-me h2 {
     color: #faf9f9;
@@ -173,16 +148,11 @@ header span {
     padding-right: 60px;
 }
 
-.contact-me span {
-    color: var(--primary-color);
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .contact-me p {
     margin: 0 auto;
     line-height: 1.7;
     color: var(--secondary-color);
-    width: 80%;
+    width: 70%;
     font-size: 20px;
     text-align: left;
 }
@@ -195,4 +165,20 @@ header span {
 
 .contact-me a:hover {
     color: var(--secondary-color);
+}
+
+/* footer */
+
+footer {
+    background: #333333;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+.note p {
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 0;
 }
