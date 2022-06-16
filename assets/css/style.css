@@ -150,10 +150,19 @@ span {
     justify-content: space-around;
     border-left: 1px solid var(--primary-color);
     padding-left: 60px;
+    overflow-x: scroll;
+}
+
+.img-container .firstwork {
+    flex: 1 100%;
+    position: relative;
+    display: inline-block;
+    overflow-x: scroll;
 }
 
 .firstwork img {
     max-width: 100%;
+    display: block;
     background-color: #222222;
     padding: 15px;
     margin-bottom: 10px;
@@ -165,8 +174,29 @@ span {
     opacity: 1;
 }
 
-.work > img {
+.firstwork a {
+    flex: 0 0 50%;
     max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.firstwork a:hover {
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
+}
+
+.img-container .work {
+    flex: 1 50%;
+    position: relative;
+    display: inline-block;
+    overflow-x: scroll;
+}
+
+.work img {
+    max-width: 100%;
+    display: block;
     background-color: #222222;
     padding: 15px;
     margin-bottom: 10px;
@@ -178,16 +208,17 @@ span {
     opacity: 1;
 }
 
-.img-container .firstwork {
-    flex: 1 100%;
-    position: relative;
-    display: inline-block;
+.work a {
+    flex: 0 0 50%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
 }
 
-.img-container .work {
-    flex: 1 50%;
-    position: relative;
-    display: inline-block;
+.work a:hover {
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
 }
 
 .img-container .text {
