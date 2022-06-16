@@ -21,10 +21,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
 }
 
 header a {
@@ -93,7 +89,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     flex: 1 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -105,6 +101,7 @@ span {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     text-align: right;
+    padding-top: 30px;
     flex: 1 30%;
     padding-right: 60px;
 }
@@ -141,17 +138,9 @@ span {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     text-align: right;
+    padding-top: 30px;
     flex: 1 30%;
     padding-right: 60px;
-}
-
-.showcase p {
-    margin: 0 auto;
-    line-height: 1.7;
-    color: var(--secondary-color);
-    width: 70%;
-    font-size: 20px;
-    text-align: left;
 }
 
 .img-container {
@@ -191,10 +180,46 @@ span {
 
 .img-container .firstwork {
     flex: 1 100%;
+    position: relative;
+    display: inline-block;
 }
 
 .img-container .work {
     flex: 1 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.img-container .text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 15px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 40%;
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+.text h3 {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: lighter;
+    padding-top: 40px;
+    padding-right: auto;
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+
+.text p {
+    color: var(--secondary-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: lighter;
+    padding-top: 0px;
+    padding-right: auto;
+    padding-bottom: 40px;
+    padding-left: 60px;
 }
 
 /* contact me section */
@@ -205,6 +230,7 @@ span {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
     text-align: right;
+    padding-top: 30px;
     flex: 1 30%;
     padding-right: 60px;
 }
@@ -244,10 +270,11 @@ footer {
     padding: 40px 35px;
 }
 
-.note p {
+footer p {
+    font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     font-size: 14px;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin: 0;
 }
