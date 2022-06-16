@@ -27,15 +27,20 @@ header {
     z-index: 9999;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 header h1 a {
     font-weight: lighter;
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
+    transition: color 1.5s ease-in-out 0s;
 }
 
-header a {
-    text-decoration: none;
+header h1 a:hover {
     color: var(--secondary-color);
 }
 
@@ -72,7 +77,7 @@ span {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 90px;
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
@@ -83,11 +88,12 @@ span {
 
 .container {
     margin: 50px auto;
-    padding-bottom: 50px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex: 1 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /* about me section */
@@ -102,7 +108,7 @@ span {
     padding-right: 60px;
 }
 
-.about-text {
+.aboutme {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
@@ -110,26 +116,24 @@ span {
     border-left: 1px solid var(--primary-color);
 }
 
-.about-me p {
-    margin: 0 60px 0 auto;
+.aboutme p {
+    margin: 0 60px;
+    padding-left: -30px;
     line-height: 1.7;
     color: var(--secondary-color);
     width: 70%;
     font-size: 18px;
-    text-align: left;
 }
 
 .about-img {
-    flex: 1 12%;
+    margin-left: 50px;
 }
 
 .about-img img {
     max-width: 150px;
-    float: left;
-    margin-left: 50px;
 }
 
-/* showcase section */
+/* work section */
 
 .showcase h2 {
     color: #faf9f9;
@@ -150,6 +154,31 @@ span {
     text-align: left;
 }
 
+.top-container, .mid-container, .bot-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.work {
+    min-height: 33.33vh;
+    border: 5px solid blue;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.top-container .work {
+    flex-basis: 70%;
+    background-color: red;
+}
+
+.mid-container .work {
+    flex-basis: 30%;
+}
+
+.bot-container .work {
+    flex-basis: 50%;
+}
+
 /* contact me section */
 
 .contact-me h2 {
@@ -162,7 +191,15 @@ span {
     padding-right: 60px;
 }
 
-.contact-me p {
+.contactme {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-left: 1px solid var(--primary-color);
+}
+
+.contactme p {
     margin: 0 auto;
     line-height: 1.7;
     color: var(--secondary-color);
@@ -171,13 +208,13 @@ span {
     text-align: left;
 }
 
-.contact-me a {
+.contactme a {
     text-decoration: none;
     color: var(--primary-color);
     transition: color 0.5s ease-in-out 0s;
 }
 
-.contact-me a:hover {
+.contactme a:hover {
     color: var(--secondary-color);
 }
 
