@@ -87,7 +87,8 @@ span {
 }
 
 .container {
-    margin: 50px auto;
+    margin: 100px auto;
+    padding-right: 100px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +119,6 @@ span {
 
 .aboutme p {
     margin: 0 60px;
-    padding-left: -30px;
     line-height: 1.7;
     color: var(--secondary-color);
     width: 70%;
@@ -154,29 +154,35 @@ span {
     text-align: left;
 }
 
-.top-container, .mid-container, .bot-container {
+.img-container {
     display: flex;
-    flex-flow: row wrap;
+    flex: 1 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-left: 1px solid var(--primary-color);
+    padding-left: 60px;
 }
 
-.work {
-    min-height: 33.33vh;
-    border: 5px solid blue;
-    flex-grow: 1;
-    flex-shrink: 0;
+.firstwork img {
+    max-width: 100%;
+    background-color: #222222;
+    padding: 15px;
+    margin: 10px;
 }
 
-.top-container .work {
-    flex-basis: 70%;
-    background-color: red;
+.work > img {
+    max-width: 100%;
+    background-color: #222222;
+    padding: 15px;
+    margin: 10px;
 }
 
-.mid-container .work {
-    flex-basis: 30%;
+.img-container .firstwork {
+    flex: 1 100%;
 }
 
-.bot-container .work {
-    flex-basis: 50%;
+.img-container .work {
+    flex: 1 50%;
 }
 
 /* contact me section */
