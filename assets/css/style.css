@@ -288,6 +288,7 @@ img:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding-left: 60px;
     border-left: 1px solid var(--cyan);
 }
 
@@ -295,7 +296,7 @@ img:hover {
     margin: 0 auto;
     line-height: 1.7;
     color: var(--white);
-    width: 70%;
+    width: 100%;
     font-size: 20px;
     text-align: left;
 }
@@ -464,6 +465,10 @@ footer p {
     .aboutme p {
         font-size: 14px;
         width: 100%;
+    }
+
+    .contactme {
+        padding: 0;
     }
 
     .contactme p {
