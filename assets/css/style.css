@@ -95,7 +95,7 @@ span {
 /* about me section */
 
 .about-me h2 {
-    color: #faf9f9;
+    color: var(--white);
     font-size: 36px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: lighter;
