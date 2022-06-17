@@ -141,8 +141,8 @@ span {
     margin: 20px 20px 0 0;
     flex: 2 0 0;
     border-radius: 100px;
-    filter: grayscale(1);
     -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 
 img:hover {
@@ -300,6 +300,13 @@ img:hover {
     text-align: left;
 }
 
+.contactme img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 3px 20px 7px 0;
+}
+
 .contactme a {
     text-decoration: none;
     color: var(--cyan);
@@ -398,11 +405,6 @@ footer p {
         justify-content: center;
         padding: 0 20px 10px 0;
     }
-    
-    .about-img img {
-        max-width: 250px;
-        padding-bottom: 20px;
-    }
 
     .img-container {
         flex: 1 100%;
@@ -466,6 +468,13 @@ footer p {
 
     .contactme p {
         font-size: 14px;
-        width: 100%;
+        width: 70%;
+    }
+
+    .contactme img {
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin: 0px 20px 7px 0;
     }
 }
